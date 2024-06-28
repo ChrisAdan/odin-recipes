@@ -4,18 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipes I Like</title>
+    <link rel="stylesheet" href="./css/style-index.css" />
   </head>
   <body>
     <header>
       <nav>
-        <h1>Odin Recipes</h1>
-        <ul>
-          <li><a href="./recipes/pizza.html">Pizza</a></li>
-          <li><a href="./recipes/pasta.html">Pasta</a></li>
-          <li><a href="./recipes/tacos.html">Tacos</a></li>
+        <ul class="nav-menu">
+          <li><a href="./recipes/pizza.html">Brick-Oven Pizza</a></li>
+          <li><a href="./recipes/pasta.html">Pesto Pasta</a></li>
+          <li><a href="./recipes/tacos.html">Birria de Res Tacos</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section id="headline">
+        <h1>Odin Recipes</h1>
+      </section>
+      <section id="cards">
+        <div class="container card-block">
+          <div class="card">
+            <div class="card-img">
+              <a href="./recipes/pizza.html">
+                <img
+                  src="./img/pizza.png"
+                  alt="A delicious pizza"
+                  width="240"
+                />
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-title">
+                <a href="./recipes/pizza.html">
+                  <h4>Brick-Oven Pizza</h4>
+                </a>
+              </div>
+              <p>
+                Try this simple brick-oven pizza made famous by several
+                well-known, Brooklyn wood-fire pizzerias
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <a href="./recipes/pasta.html">
+                <img src="./img/pasta.png" alt="Beautiful pasta" width="240" />
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-title">
+                <a href="./recipes/pasta.html">
+                  <h4>Pesto Pasta</h4>
+                </a>
+              </div>
+              <p>Pesto pasta is easy to make and full of flavor.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <a href="./recipes/tacos.html">
+                <img src="./img/tacos.png" alt="Some tasty tacos" width="240" />
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-title">
+                <a href="./recipes/tacos.html">
+                  <h4>Birria de Res Tacos</h4>
+                </a>
+              </div>
+              <p>
+                Mexican birria tacos, Jalisco-style, made with braised beef
+                that's slow-cooked in a fragrant 3-chile sauce with a delicious
+                spice mix.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Author: Chris Adan</p>
+    </footer>
   </body>
 </html>
